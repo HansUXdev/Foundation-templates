@@ -4,224 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation Angular</title>
-    <link href="assets/css/app.css" rel="stylesheet" type="text/css">
-    <link href="assets/fonts/zurb/foundation-icons.css" rel="stylesheet" type="text/css">
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/routes.js"></script>
-    <script src="assets/js/angular.js"></script>
+    <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/routes.js"></script>
+    <script src="/assets/js/angular.js"></script>
   </head>
-
-  <style>
-    .scroll-section {overflow-x: scroll;}
-  </style>
-
   <body>
-    <!--  -->
-      <!-- Right Off Canvas -->
-      <zf-offcanvas id="offcanvas-top" position="top">
-        <div class="grid-content">
-          <a href="#" zf-close class="close-button">&times;</a>
-          <h3>This is a top off-canvas menu.</h3>
-        </div>
-      </zf-offcanvas>
-
-      <!-- Bottom Off Canvas -->
-      <zf-offcanvas id="offcanvas-right" position="right">
-        <div class="grid-content">
-          <a href="#" zf-close class="close-button">&times;</a>
-          <h3>This is a right off-canvas menu.</h3>
-        </div>
-      </zf-offcanvas>
-
-      <!-- Left Off Canvas -->
-      <zf-offcanvas id="offcanvas-bottom" position="bottom">
-      <div class="grid-content">
-        <a href="#" zf-close class="close-button">&times;</a>
-        <h3>This is a bottom off-canvas menu.</h3>
-      </div>
-      </zf-offcanvas>
-
-      <!-- Top Off Canvas -->
-      <zf-offcanvas id="offcanvas-left" position="left">
-      <div class="grid-content">
-        <a href="#" zf-close class="close-button">&times;</a>
-        <h3>This is a left off-canvas menu.</h3>
-      </div>
-      </zf-offcanvas>
-    <!--  -->
-
     <div class="grid-frame vertical">
-      
-      <div class="dark shrink title-bar">
-        <div class="center title">Offcanvas Layout</div>
-
-        <span class="left">
-          <!-- <a zf-open="projects"> -->
-            
-          <a class="" href="#" zf-hard-toggle="offcanvas-left"> 
-            <i class="fi-list" style="font-size: x-large;"></i>
-          </a>
-          <!-- </a> -->
-
-        </span>
-
-       <!--  <span class="right"><a zf-open="profile">
-          <i class="fi-widget" style="font-size: x-large;"></i>
-        </a></span> -->
-
-        <span class="right">
-
-          <!-- <a zf-open="settings"> -->
-            
-          <a class="" href="#" zf-hard-toggle="offcanvas-right"> 
-            <i class="fi-list" style="font-size: x-large;"></i>
-          </a>
-          <!-- </a> -->
-
-        </span>
-      </div>
-
-
-      <div class="grid-block scroll-section" ng-class="['ui-animation']" ui-view>
-      </div>
-      
-    <!-- FIXED FOOTER -->
-      <div class="grid-block shrink player">
-      <!-- left -->
-        <div class=" medium-3 small-3 content">
-          <ul class="menu-bar">
-            <li>
-              <a href="#">
-                <h2>
-                  <i class="fi-telephone"></i>
-                </h2>
-              </a>
-            </li>
-          </ul>
-        </div>
-      <!-- left -->
-      <!-- Middle -->
-        <div class="medium-6 small-6 content ">
-          <ul class="menu-bar">
-            <li>
-                  <a class="" href="#" zf-hard-toggle="offcanvas-bottom"> 
-                    <h2>
-                      <i class="fi-list"></i> 
-                      
-                    </h2>
-                  </a>
-            </li>
-          </ul>
-        </div>
-      <!-- Middle -->
-
-      <!-- Right -->
-        <div class="medium-3 small-3 content ">
-          <ul class="menu-bar">
-            <li>
-              <a ui-sref="#">
-                <h2>
-                  <i class="fi-comment"></i>
-                </h2>
-              </a>
-            </li>
-          </ul>
-        </div>
-      <!-- Right -->
-      </div>
-    <!-- FIXED FOOTER -->
-
-    </div>
-    
-    <!-- Left Panel -->
-    <zf-panel id="projects" position="left">
-      <a href="#" zf-close style="font-size: -webkit-xxx-large;">&times;</a>
-      <ul class="menu-bar vertical">
-      <div class="grid-content">
-        <ul class="icon-left vertical menu-bar">
-          <li><a href="#"><img zf-iconic="" data-src="/assets/img/iconic/ban.svg"> Songs</a></li>
-          <li><a href="#"><img zf-iconic="" data-src="/assets/img/iconic/ban.svg"> Albums</a></li>
-          <li><a href="#"><img zf-iconic="" data-src="/assets/img/iconic/ban.svg"> Artists</a></li>
+      <div class="grid-content shrink" style="padding: 0;">
+        <ul class="primary condense menu-bar">
+          <li><a><strong>Foundation for Apps</strong></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="grid-content shrink now-playing">
-        <h5>Now Playing</h5>
-        <img src="http://placehold.it/350&text=Album">
-        <p>Shake it off by Taylor Swift</p>
+      <div class="grid-content">
+        <div class="grid-container">
+          <div ng-class="['ui-animation']" ui-view></div>
+        </div>
       </div>
-      </ul>
-    </zf-panel>
-    
-    <!-- Right Panel -->
-    <zf-panel id="profile" position="right">
-      <div class="grid-content small-12">
-        <a href="#" zf-close style="font-size: -webkit-xxx-large;">&times;</a>
-          <section class="block-list">
-            <header>Activity Feed</header>
-            <ul>
-              <li><a href="#"><h6>Jon Snow</h6>Just Listened to Death Metal</a></li>
-              <li><a href="#"><h6>Hodor</h6>Just Listened to Hit Me Baby One More Time</a></li>
-              <li><a href="#"><h6>Arya Stark</h6>Just Liked Taylor Swift</a></li>
-              <li><a href="#"><h6>Jon Snow</h6>Just Listened to Death Metal</a></li>
-              <li><a href="#"><h6>Hodor</h6>Just Listened to Hit Me Baby One More Time</a></li>
-              <li><a href="#"><h6>Arya Stark</h6>Just Liked Taylor Swift</a></li>
-              <li><a href="#"><h6>Jon Snow</h6>Just Listened to Death Metal</a></li>
-              <li><a href="#"><h6>Hodor</h6>Just Listened to Hit Me Baby One More Time</a></li>
-              <li><a href="#"><h6>Arya Stark</h6>Just Liked Taylor Swift</a></li>
-              <li><a href="#"><h6>Jon Snow</h6>Just Listened to Death Metal</a></li>
-              <li><a href="#"><h6>Hodor</h6>Just Listened to Hit Me Baby One More Time</a></li>
-              <li><a href="#"><h6>Arya Stark</h6>Just Liked Taylor Swift</a></li>
-            </ul>
-          </section>
-        </div>
-    </zf-panel>
-
-    <!-- Right Panel -->
-    <zf-panel id="settings" position="right">
-      <div class="grid-content small-12">
-        <a href="#" zf-close style="font-size: -webkit-xxx-large;">&times;</a>
-          <section class="block-list">
-
-            <div class="grid-block align-center">
-              <div class="grid-content medium-6">
-                <!-- <h4><a ui-sref="home">&#10094; Back</a></h4> -->
-                
-                <hr />
-
-                <section class="block-list">
-                  <header>Account Info</header>
-                  <ul>
-                    <li><input type="text" value="geoff@zurb.com"></li>
-                    <li><input type="password" value="password1234"></li>
-                  </ul>
-                </section>
-              
-                <section class="block-list">
-                  <header>Filtering</header>
-                  <ul>
-                    <li>
-                      <span>Filter Spam</span>
-                      <div class="switch"><input type="checkbox" id="setting1"><label for="setting1"></label></div>
-                    </li>
-                    <li>
-                      <span>Delete Facebook Emails</span>
-                      <div class="switch"><input type="checkbox" id="setting2"><label for="setting2"></label></div>
-                    </li>
-                    <li>
-                      <span>Bake Pizza</span>
-                      <div class="switch"><input type="checkbox" id="setting3"><label for="setting3"></label></div>
-                    </li>
-                    <li>
-                      <span>Consider Corgis</span>
-                      <div class="switch"><input type="checkbox" id="setting4"><label for="setting4"></label></div>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-            </div>
-          </section>
-        </div>
-    </zf-panel>
-  
+    </div>
   </body>
 </html>
