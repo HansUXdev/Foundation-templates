@@ -1,10 +1,29 @@
 # Windows image file caches
+
+
+firebase/firemail
+
 Thumbs.db
 ehthumbs.db
 bower_components
 node_modules
 build
 .sass-cache
+
+basic/music/node_modules
+basic/email/node_modules
+basic/chat/node_modules
+basic/productivity/node_modules
+basic/travel/node_modules
+
+basic/music/bower_components
+basic/email/bower_components
+basic/chat/bower_components
+basic/productivity/bower_components
+basic/travel/bower_components
+
+
+
 # Folder config file
 Desktop.ini
 
