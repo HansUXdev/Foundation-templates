@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Apps</title>
+    <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/foundation.js"></script>
+    <script src="/assets/js/templates.js"></script>
+    <script src="/assets/js/routes.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+
+        <!-- <div ng-include="'templates/navigation/menubar.html'"></div> -->
+            
+
+    
+        <div class="grid-content shrink" style="padding: 0;">
+            <!-- Nav component -->
+            <div class="nav-component" ng-include="'templates/navigation/nav-component.html'"></div>
+        <style>
+        .test{
+            display: none;
+        }
+        .nav-component:hover .test.ng-scope{
+            display: block!important;
+        }
+        /*FIX to reveal on .right:hover*/
+            /*on hover .right, select #test.ng-scopt with parent of*/
+               /* .nav-component.ng-scope .primary .right:hover > #test.test.ng-scope{
+                    display: block!important;
+                }*/
+            /**/
+
+
+        </style>
+
+        </div>
+
+
+
+
+
+      <div ui-view class="grid-content">
+      </div>
+
+    <!-- Footer -->
+        <div class="primary title-bar">
+            <div class="center title">Center</div>
+            <span class="left"><a href="#">Left</a></span>
+            <span class="right"><a href="#">Right</a></span>
+        </div>
+
+    </div>
+
+  </body>
+</html>
