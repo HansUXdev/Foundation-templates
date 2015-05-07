@@ -26,12 +26,20 @@
         .test{
             display: none;
         }
-        .nav-component:hover .test.ng-scope{
-            display: block!important;
-        }
+        /*Hover on all reveal*/
+            .nav-component:hover .test.ng-scope{
+                display: block!important;
+            }
         /*FIX to reveal on .right:hover*/
             /*on hover .right, select #test.ng-scopt with parent of*/
-               /* .nav-component.ng-scope .primary .right:hover > #test.test.ng-scope{
+/*                .nav-component.ng-scope .primary .right:hover .test.ng-scope{
+                    display: block!important;
+                    position: absolute;
+                      top: 11%;
+                    right: 3px;
+                    width: 100%;
+                }
+                .nav-component.ng-scope .primary .test.ng-scope:hover{
                     display: block!important;
                 }*/
             /**/
@@ -50,7 +58,7 @@
 
     <!-- Footer -->
         <div class="primary title-bar">
-            <div class="center title">Center</div>
+            <div class="center title">Fixed Footer</div>
             <span class="left"><a href="#">Left</a></span>
             <span class="right"><a href="#">Right</a></span>
         </div>
